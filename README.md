@@ -6,7 +6,9 @@ Writes the description under QR code pic
 
 Scans QR Code using CV2 and PYZBAR 
 
-EX QR Code: 
+## Example QR Code 
 ![me](https://github.com/Kunal2341/PressureVisionDataCreation/blob/main/testFile.png?raw=true)
 
+## Example Video
 
+<video src='https://github.com/Kunal2341/PressureVisionDataCreation/blob/main/ScanQRCodeShort.mp4?raw=true' width=180/>
