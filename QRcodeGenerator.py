@@ -13,11 +13,14 @@ def camelCase(st):
     output = ''.join(x for x in st.title() if x.isalnum())
     return output[0].lower() + output[1:]
 
+def makeCheckFolder(videoFileName):
+    if not os.path.exists(folderName):
+        os.mkdir(folderName)
+    os.chdir(folderName)
 
 folderName = "./QRPics/"
-if not os.path.exists(folderName):
-    os.mkdir(folderName)
-os.chdir(folderName)
+makeCheckFolder(folderName)
+
 
 actionCount = 0
 for action in data:
@@ -44,9 +47,8 @@ for action in data:
     
     #drawImg.text((0,0), "TEST", size=20)
     drawImg.text((img.size[0]/2 - font.getsize(QRCodeData)[0]/2, 
-            img.size[1]-font.getsize(QRCodeData)[1]*1.25), QRCodeData, font=font)
+                img.size[1]-font.getsize(QRCodeData)[1]*1.25), QRCodeData, font=font)
     #img.size[0]/2, img.size[1]*0.9
-
 
     img.save(fileName)
     actionCount+=1

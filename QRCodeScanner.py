@@ -15,7 +15,7 @@ def makeFolder(videoFileName):
         os.mkdir(folderName)
     os.chdir(folderName)
 
-videoFileName = "ScanQRCodeTest.MOV"
+videoFileName = "ScanQRCodeFlash.MOV"
 FRAME_INTERVAL = 1
 
 vidcap = cv2.VideoCapture(videoFileName)
