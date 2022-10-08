@@ -4,8 +4,6 @@ import re
 from PIL import Image
 from pyzbar.pyzbar import decode
 
-
-
 def sorted_alphanumeric(data):
     convert = lambda text: int(text) if text.isdigit() else text.lower()
     alphanum_key = lambda key: [ convert(c) for c in re.split('([0-9]+)', key) ] 
@@ -63,8 +61,8 @@ print("-"*40)
 print("Frame Rate:\t\t\t{}\nDuration:\t\t\t{} sec".format(round(fps, 5), duration))
 print("TotalFrames:\t\t\t{}".format(round(duration*1000/fps)))
 print("Number of frames checking:\t{} (Saving every {} frame)".format(checkingFrameCt, FRAME_INTERVAL))
-print("CV2 Positive Scans:\t\t{}\nCV2 Percantage Working:\t\t{}%".format(hasValueCountcv2, round(hasValueCountcv2/checkingFrameCt)*100)) #out of checking
-print("PYZBAR Positive Scans:\t\t{}\nPYZBAR Percantage Working:\t{}%".format(hasValueCtpyzBar, round(hasValueCtpyzBar/checkingFrameCt)*100)) #out of checking
+print("CV2 Positive Scans:\t\t{}\nCV2 Percantage Working:\t\t{}%".format(hasValueCountcv2, round(hasValueCountcv2/checkingFrameCt*100))) #out of checking
+print("PYZBAR Positive Scans:\t\t{}\nPYZBAR Percantage Working:\t{}%".format(hasValueCtpyzBar, round(hasValueCtpyzBar/checkingFrameCt*100))) #out of checking
 print("-"*40)
 
 
