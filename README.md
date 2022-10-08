@@ -7,6 +7,6 @@ Writes the description under QR code pic
 Scans QR Code using CV2 and PYZBAR 
 
 EX QR Code: 
-![me](https://github.com/Kunal2341/PressureVisionDataCreation/blob/main/testFile.png)
+![me](https://github.com/Kunal2341/PressureVisionDataCreation/blob/main/testFile.png?raw=true)
 
 
