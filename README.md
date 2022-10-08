@@ -12,3 +12,5 @@ Scans QR Code using CV2 and PYZBAR
 ## Example Video
 
 <video src='https://github.com/Kunal2341/PressureVisionDataCreation/blob/main/ScanQRCodeShort.mp4?raw=true' width=180/>
+
+https://github.com/Kunal2341/PressureVisionDataCreation/blob/main/ScanQRCodeShort.mp4?raw=true
