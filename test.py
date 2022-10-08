@@ -1,6 +1,12 @@
-import pandas as pd
-def camelCase(st):
-    output = ''.join(x for x in st.title() if x.isalnum())
-    return output[0].lower() + output[1:]
+from PIL import Image
+from pyzbar.pyzbar import decode
+import os
 
-print(camelCase("Finger tips Push away"))
+
+def pyzbarDecode(imgPath):
+    result = decode(Image.open(imgPath))
+    for barcode in result:
+        return(barcode.data.decode("utf-8"))
+
+print(os.getcwd())
+print(type(pyzbarDecode("Frame2.jpg")))
